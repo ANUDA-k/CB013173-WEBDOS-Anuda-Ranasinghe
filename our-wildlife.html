@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE TITLE</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'leopard': {
+                            '50': '#fffbeb',
+                            '100': '#fef3c7',
+                            '200': '#fde68a',
+                            '300': '#fcd34d',
+                            '400': '#fbbf24',
+                            '500': '#f59e0b',
+                            '600': '#d97706',
+                            '700': '#b45309',
+                            '800': '#92400e',
+                            '900': '#78350f',
+                            '950': '#451a03',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="_home" x-data="_home">
+        <header class="bg-leopard-500">
+            <div class="container mx-auto flex justify-between">
+                <img src="../images/logo3.png" alt="Department of Wildlife Conservation" class="w-64">
+                <nav class="content-center hidden lg:grid">
+                    <ul class="flex space-x-7 text-leopard-700 text-sm">
+                        <li>
+                            <a href="/" class="hover:text-leopard-950 hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="/wildlife-dept.html" class="hover:text-leopard-950 hover:underline">Wildlife Dept</a>
+                        </li>
+                        <li>
+                            <a href="/leopard.html" class="hover:text-leopard-950 hover:underline">Leopard</a>
+                        </li>
+                        <li>
+                            <a href="/our-wildlife.html" class="hover:text-leopard-950 hover:underline">Our Wildlife</a>
+                        </li>
+                        <li>
+                            <a href="/yala.html" class="hover:text-leopard-950 hover:underline">Yala</a>
+                        </li>
+                        <li>
+                            <a href="/willpattu.html" class="hover:text-leopard-950 hover:underline">Wilpattu</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="hover:text-leopard-950 hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="https://www.dwc.gov.lk/">
+                    <img src="../images/sl-flag.png" alt="Sri Lanka" class="h-8 mt-2">
+                </a>
+            </div>
+</header>
+        <main>           
+            <!-- Slideshow Start -->
+            <div class="container mx-auto overflow-hidden">
+                <div class="swiper-container h-screen">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide relative">
+                            <img src="../images/sinharaja2.jpg" 
+                                 alt="Placeholder" class="absolute inset-0 w-auto h-auto">
+                                 <h1 class="text-6xl font-bold text-center">Your Title</h1>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/sinharaja3.jpg" alt="Placeholder">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/sinharaja4.jpg" alt="Placeholder">
+                        </div>
+                    </div>                
+                </div>
+            </div>
+
+            <div class="sm:text-7xl md:text-6xl lg:text-5xl xl:text-4xl text-center font-bold">
+<div class="text-8xl">
+                <h1>WELCOME TO WILDERNESS</h1>
+            </div>
+            </div>
+
+            <div class="relative overflow-hidden mb-4">
+                <img src="../images/sinharaja1.jpg" alt="Image" class="w-full h-full object-cover">
+            
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            
+                <div class="absolute inset-0 text-white flex items-center justify-center">
+                    <h2 class="text-7xl font-semibold color-black">EXPLORE</h2>
+                </div>
+            </div>
+                <div class="container mx-auto">
+                    <div class="mt-10 grid md:grid-cols-2 gap-6 my-8">
+                        <div>
+                            <img src="../images/sinharajamap.png" alt="Placeholder" class="max-w-full">
+                        </div>
+                        <div class="relative">
+                            <h4 class="text-sm text-leopard text-leopard-800">What to expect</h4>
+                            <h2 class="text-2xl font-bold text-leopard-700 mt-2">
+                                Sinharaja Forest Reserve
+                            </h2>
+                            <p class="text-sm leading-7 mt-2">
+                                Located in south-west Sri Lanka, Sinharaja is the country's last viable area of primary tropical rainforest. More than 60% of the trees are endemic and many of them are considered rare. There is much endemic wildlife, especially birds, but the reserve is also home to over 50% of Sri Lanka's endemic species of mammals and butterflies, as well as many kinds of insects, reptiles and rare amphibians.
+                            </p>
+                            <span class="text-leopard-800 text-sm pt-3 block">
+                                Read More
+                            </span>
+                            <a href="/wildlife-dept.html" class="absolute inset-0"></a>
+                        </div>
+                    </div>
+            <!-- Summary Block End -->
+
+            <!-- Leopard Block Start -->
+            <div class="mx-8 bg-gray-100 p-4 md:p-8">  
+            <div class="overflow-x-auto">
+                    <table class="mt-10 mx-2 mb-4 min-w-full bg-white border border-gray-300 ">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b border-r text-left">Name</th>
+                                <th class="py-2 px-4 border-b border-r text-center">feature</th>
+                                <th class="py-2 px-4 border-b border-r text-right">Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b text-left">RED SLENDER LORIS</td>
+                                <td class="py-2 px-4 border-b text-center"> nocturnal strepsirrhine primate native</td>
+                                <td class="py-2 px-4 border-b text-right">Sinharaja</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b text-left">TOQUE MACAQUE</td>
+                                <td class="py-2 px-4 border-b text-center">reddish-brown-coloured</td>
+                                <td class="py-2 px-4 border-b text-right">Sri Lanka
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b text-left">Sri Lankan sloth bear</td>
+                                <td class="py-2 px-4 border-b text-center">subspecies of the sloth bear</td>
+                                <td class="py-2 px-4 border-b text-right">lowland dry forests </td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b text-left"> Ceylon magpie</td>
+                                <td class="py-2 px-4 border-b text-center">brightly coloured member of the family Corvidae</td>
+                                <td class="py-2 px-4 border-b text-right">dense wet evergreen temperate rainforests</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b text-left">golden palm civet </td>
+                                <td class="py-2 px-4 border-b text-center">palm civet endemic</td>
+                                <td class="py-2 px-4 border-b text-right">hill regions </td>
+                            </tr>
+                            
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>  
+
+        </main>
+        <footer class="bg-leopard-500 text-white footer-paw">
+            <div class="container mx-auto py-2 grid grid-cols-4 h-56">
+                <div class="col-span-1">
+                    <img src="../images/logo3.png" alt="Department of Wildlife Conservation" class="w-64">
+                    <h2>Department of Wildlife Conservation</h2>
+                    <p class="text-xs">
+                        The Department of Wildlife Conservation Conserves the Biodiversity of Sri Lanka.
+                    </p>
+                </div>
+                <div>
+
+                </div>
+                <div class="pt-5">
+                    <h2 class="text-lg text-leopard-200">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="/" class="hover:text-leopard-950">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/wildlife-dept.html">Wildlife Dept</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/leopard.html">Leopard</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-5">
+                    <h2 class="text-lg text-leopard-800">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="hover:text-leopard-950" href="/our-wildlife.html">Our Wildlife</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/yala.html">Yala</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/wilpattu.html">Wilpattu</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-leopard-500 text-white">
+                <div class="container mx-auto text-xs">
+                    <div class="flex justify-between">
+                        <p class="text-center py-2">
+                            All Copyrights Reserved © Department of Wildlife Conservation
+                        </p>
+                        <p class="text-center py-2">
+                            Developed by <a href="">Anuda Ranasinghe</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('_home', () => ({
+                init() {
+                    var swiper = new Swiper(".swiper-container", {                    
+                        loop: true,
+                        autoplay: {
+                            delay: 10000,
+                            disableOnInteraction: false,
+                        },
+    
+                    });
+                }
+            }))
+        })
+    </script>
+</body>
+
+</html>
+
+
+
+

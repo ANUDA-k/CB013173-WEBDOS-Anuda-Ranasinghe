@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE TITLE</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'leopard': {
+                            '50': '#fffbeb',
+                            '100': '#fef3c7',
+                            '200': '#fde68a',
+                            '300': '#fcd34d',
+                            '400': '#fbbf24',
+                            '500': '#f59e0b',
+                            '600': '#d97706',
+                            '700': '#b45309',
+                            '800': '#92400e',
+                            '900': '#78350f',
+                            '950': '#451a03',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="_home" x-data="_home">
+        <header class="bg-leopard-500">
+            <div class="container mx-auto flex justify-between">
+                <img src="../images/logo3.png" alt="Department of Wildlife Conservation" class="w-64">
+                <nav class="content-center hidden lg:grid">
+                    <ul class="flex space-x-7 text-leopard-700 text-sm">
+                        <li>
+                            <a href="/" class="hover:text-leopard-950 hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about.html" class="hover:text-leopard-950 hover:underline">About</a>
+                        </li>
+                        <li>
+                            <a href="/wildlife-dept.html" class="hover:text-leopard-950 hover:underline">Wildlife Dept</a>
+                        </li>
+                        <li>
+                            <a href="/leopard.html" class="hover:text-leopard-950 hover:underline">Leopard</a>
+                        </li>
+                        <li>
+                            <a href="/our-wildlife.html" class="hover:text-leopard-950 hover:underline">Our Wildlife</a>
+                        </li>
+                        <li>
+                            <a href="/yala.html" class="hover:text-leopard-950 hover:underline">Yala</a>
+                        </li>
+                        <li>
+                            <a href="/willpattu.html" class="hover:text-leopard-950 hover:underline">Wilpattu</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="hover:text-leopard-950 hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="https://www.dwc.gov.lk/">
+                    <img src="../images/sl-flag.png" alt="Sri Lanka" class="h-8 mt-2">
+                </a>
+            </div>
+</header>
+        <main>
+
+            <!-- Slideshow Start -->
+            <div class="container mx-auto overflow-hidden">
+                <div class="swiper-container h-screen">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide relative">
+                            <img src="../images/lepord7.jpg"
+                            alt="Placeholder" class="absolute inset-0 w-auto h-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/lepord9.jpg" alt="Placeholder" >
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/lepord10.jpg" alt="Placeholder">
+                        </div>
+                    </div>                
+                </div>
+            </div>
+           
+            <div class="text-bold text-8xl text-center">
+                <h2 class="font-bold color-black mt-2 my-10 underline m">OUR LEPORDS</h2>
+            </div>
+
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <!-- Image Card  -->
+                  <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="../images/lepord1.jpg" alt="Image 1" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h2 class="text-2xl font-bold text-leopard-700 mt-2">Yala</h2>
+                    <p class="text-sm leading-7 mt-2">Around 40 leopards are believed to roam the area, but sightings of these elusive creatures are still very rare</p>
+                    <a href="#" class="text-blue-500 mt-2 inline-block">Read more</a>
+                  </div>
+                  <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="../images/lepord3.jpg" alt="Image 1" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h2 class="text-2xl font-bold text-leopard-700 mt-2">Willpattu </h2>
+                    <p class="text-sm leading-7 mt-2">Leopard sightings have been more common recently and it’s slightly less busy than Yala</p>
+                    <a href="#" class="text-blue-500 mt-2 inline-block">Read more</a>
+                  </div>
+                  <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="../images/lepord4.jpg" alt="Image 1" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h2 class="text-2xl font-bold text-leopard-700 mt-2">Udawalwa</h2>
+                    <p class="text-sm leading-7 mt-2">Sloth bear and leopard sightings aren’t unheard of, but are pretty rare here.</p>
+                    <a href="#" class="text-blue-500 mt-2 inline-block">Read more</a>
+                  </div>
+</div>
+
+<div class="container mx-auto">
+    <div class="grid lg:grid-cols-2 gap-6 my-10 ">
+        <div>
+            <img src="../images/lepord5.jpg" alt="Placeholder" class="rounded-full">
+        </div>
+        <div class="relative">
+            <h2 class="text-2xl font-bold text-leopard-700 mt-2 top-8">
+                Destruction of habitat
+            </h2>
+            <p class="text-sm leading-7 mt-2 ">
+                The greatest threat to the leopard, however, is unplanned development and illegal encroachment into its natural habitat. While Sri Lanka needs development, it must be planned, sustainable and take into account the wilderness and wildlife that may already be living in these areas. If that was done, then much of the human-wildlife conflict that happens could be avoided. 
+            </p>
+            <span class="text-leopard-300 text-sm pt-3 block">
+                Read More
+            </span>
+            <a href="/wildlife-dept.html" class="absolute inset-0"></a>
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto">
+    <div class="grid lg:grid-cols-2 gap-6 my-10">
+        <div class="relative">
+            <h2 class="text-2xl font-bold text-leopard-700 mt-2">
+                Present day threats
+            </h2>
+            <p class="text-sm leading-7 mt-2">
+                In national parks, unwarranted disturbance and bad behaviour by safari jeep drivers and visitors have endangered the lives of the leopards living in their sanctuary. They are either driven to the edges, and sometimes out, seeking safety from the uproar.
+            </p>
+            <span class="text-leopard-300 text-sm pt-3 block">
+                Read More
+            </span>
+            <a href="/leopard.html" class="absolute inset-0"></a>
+        </div>
+        <div>
+            <img src="../images/lepord6.jpg" alt="Placeholder" class="rounded-full">
+        </div>
+    </div>
+</div>
+            
+        </main>
+        <footer class="bg-leopard-500 text-white footer-paw">
+            <div class="container mx-auto py-2 grid grid-cols-4 h-56">
+                <div class="col-span-1">
+                    <img src="/images/logo3.png" alt="Department of Wildlife Conservation" class="w-64">
+                    <h2>Department of Wildlife Conservation</h2>
+                    <p class="text-xs">
+                        The Department of Wildlife Conservation Conserves the Biodiversity of Sri Lanka.
+                    </p>
+                </div>
+                <div>
+
+                </div>
+                <div class="pt-5">
+                    <h2 class="text-lg text-leopard-200">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="/" class="hover:text-leopard-950">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/wildlife-dept.html">Wildlife Dept</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/leopard.html">Leopard</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-5">
+                    <h2 class="text-lg text-leopard-200">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="hover:text-leopard-950" href="/our-wildlife.html">Our Wildlife</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/yala.html">Yala</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/wilpattu.html">Wilpattu</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-leopard-500 text-white">
+                <div class="container mx-auto text-xs">
+                    <div class="flex justify-between">
+                        <p class="text-center py-2">
+                            All Copyrights Reserved © Department of Wildlife Conservation
+                        </p>
+                        <p class="text-center py-2">
+                            Developed by <a href="">Anuda Ranasinghe</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('_home', () => ({
+                init() {
+                    var swiper = new Swiper(".swiper-container", {                    
+                        loop: true,
+                        autoplay: {
+                            delay: 10000,
+                            disableOnInteraction: false,
+                        },
+    
+                    });
+                }
+            }))
+        })
+    </script>
+</body>
+
+</html>

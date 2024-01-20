@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE TITLE</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'leopard': {
+                            '50': '#fffbeb',
+                            '100': '#fef3c7',
+                            '200': '#fde68a',
+                            '300': '#fcd34d',
+                            '400': '#fbbf24',
+                            '500': '#f59e0b',
+                            '600': '#d97706',
+                            '700': '#b45309',
+                            '800': '#92400e',
+                            '900': '#78350f',
+                            '950': '#451a03',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="_home" x-data="_home">
+        <header class="bg-leopard-500">
+            <div class="container mx-auto flex justify-between">
+                <img src="../images/logo3.png" alt="Department of Wildlife Conservation" class="w-64">
+                <nav class="content-center hidden lg:grid">
+                    <ul class="flex space-x-7 text-leopard-700 text-sm">
+                        <li>
+                            <a href="/" class="hover:text-leopard-950 hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="/wildlife-dept.html" class="hover:text-leopard-950 hover:underline">Wildlife Dept</a>
+                        </li>
+                        <li>
+                            <a href="/leopard.html" class="hover:text-leopard-950 hover:underline">Leopard</a>
+                        </li>
+                        <li>
+                            <a href="/our-wildlife.html" class="hover:text-leopard-950 hover:underline">Our Wildlife</a>
+                        </li>
+                        <li>
+                            <a href="/yala.html" class="hover:text-leopard-950 hover:underline">Yala</a>
+                        </li>
+                        <li>
+                            <a href="/willpattu.html" class="hover:text-leopard-950 hover:underline">Wilpattu</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="hover:text-leopard-950 hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="https://www.dwc.gov.lk/">
+                    <img src="../images/sl-flag.png" alt="Sri Lanka" class="h-8 mt-2">
+                </a>
+            </div>
+</header>
+        <main>
+
+            <!-- Slideshow Start -->
+            <div class="container mx-auto overflow-hidden">
+                <div class="swiper-container h-screen">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide relative">
+                            <img src="../images/wd5.jpg" 
+                                 alt="Placeholder" class="absolute inset-0 w-auto h-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/wd6.jpeg" alt="Placeholder">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/wd7.jpg" alt="Placeholder">
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <!-- Slideshow End -->
+
+            <!-- Summary Block Start -->
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-4 md:mx-8">
+                <img src="../images/wd1.jpeg" alt="Image 1" class="w-full h-full object-cover shadow-lg">
+                <img src="../images/wd2.jpg" alt="Image 2" class="w-full h-full object-cover shadow-lg">
+                <img src="../images/wd3.jpeg" alt="Image 3" class="w-full h-full object-cover shadow-lg">
+                <img src="../images/wd4.jpeg" alt="Image 4" class="w-full h-full object-cover shadow-lg">
+                <!-- Add more images as needed -->
+            </div>
+            
+            <div class="relative mx-4 md:mx-8">
+                <div class="text-center"></div>
+                <h2 class=" md:text-center text-2xl font-bold text-leopard-700 mt-2">
+                    Department of Wildlife Conservation
+                </h2>
+                <p class="text-center md:text-left text-sm leading-7 mt-2 pr-4 pl-4">
+                    The Department of Wildlife Conservation has been entrusted with the responsibility of preserving
+                    eco-system endowed with various plants and animal species which has inherited the country with
+                    enormous bio-diversity. The main function of the Department of Wildlife Conservation established
+                    in 1949 is the conservation of wildlife resources in Sri Lanka.
+                </p>
+                <span class=" md:text-center text-leopard-300 text-sm pt-3 block">
+                    Read More
+                </span>
+                <a href="/wildlife-dept.html" class="absolute inset-0 my-8 "></a>
+            </div>
+            <!-- Summary Block End -->
+            <div class="flex flex-col md:flex-row">
+
+                <!-- Text content on the left -->
+                <div class="md:w-1/2 p-4">
+                    <h4 class="md:mt-10 text-leopard-300 mx-4 ">Our Purpose</h4>
+                    <h2 class="text-2xl md:text-3xl font-bold text-leopard-700 mt-2 mx-4">
+                        Protected areas
+                    </h2>
+                    <p class="text-center md:text-left text-sm leading-7 mt-2 pr-4 pl-4">
+                        Protected areas of Sri Lanka play a vital role in biodiversity Conservation. Shrinking and disappearance of habitats due to the rapid growth of human population, development projects, and urbanization, some species are being pushed into the threatened status. Human intervention is prohibited or limited inside the protected areas
+                        <h4 class="mx-4 my-4 text-sm shadow-sm font-bold">Classification of Protected Areas according to Fauna and Flora Protection Ordinance</h4>
+                    </p>
+                    <ul class="mx-4 list-disc md:text-left text-sm leading-7 mt-2 pr-4 pl-4">
+                        <li>Strict Natural Reserve – 03</li>
+                        <li>National Park – 25</li>
+                        <li>Nature Reserve – 09</li>
+                        <li>Jungle Corridor – 02</li>
+                        <li>Marine National Park – 01</li>
+                        <li>Marine Reserves – 00</li>
+                        <li>Buffer zone – 00</li>
+                        <li>Sanctuary or a Managed Elephant Reserve – 68</li>
+                    </ul>
+            
+                    <span class="text-leopard-300 text-sm md:text-base pt-3 block">
+                        Read More
+                    </span>
+                    <div class="mt-4"></div>
+                    <a href="../leopard.html" class="absolute inset-0"></a>
+                </div>
+            
+                <!-- Background image on the right -->
+                <div class="my-8 flex-1 bg-cover bg-no-repeat h-screen" style="background-image: url('../images/depmap.jpg')"></div>
+            
+            </div>
+            <div class="mx-4 my-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+                <!-- Image 1 -->
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wd1.jpeg" alt="Image 1" class="w-full h-full object-cover">
+                </div>
+            
+                <!-- Image 2 -->
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wd2.jpg" alt="Image 2" class="w-full h-full object-cover">
+                </div>
+            
+                <!-- Repeat for Images 3 to 9 -->
+            
+                <!-- Image 3 -->
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wd4.jpeg" alt="Image 3" class="w-full h-full object-cover">
+                </div>
+               
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wild5.jpg" alt="Image 3" class="w-full h-full object-cover">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wild6.png" alt="Image 3" class="w-full h-full object-cover">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wild7.jpg" alt="Image 3" class="w-full h-full object-cover">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wild8.jpg" alt="Image 3" class="w-full h-full object-cover">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wild9.jpg" alt="Image 3" class="w-full h-full object-cover">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="../images/wild10.jpg" alt="Image 3" class="w-full h-full object-cover">
+                </div>
+
+
+                <!-- ... Repeat for Images 4 to 9 ... -->
+            </div>
+            
+            </main>
+        <footer class="bg-leopard-500 text-white footer-paw">
+            <div class="container mx-auto py-2 grid grid-cols-4 h-56">
+                <div class="col-span-1">
+                    <img src="/images/logo3.png" alt="Department of Wildlife Conservation" class="w-64">
+                    <h2>Department of Wildlife Conservation</h2>
+                    <p class="text-xs">
+                        The Department of Wildlife Conservation Conserves the Biodiversity of Sri Lanka.
+                    </p>
+                </div>
+                <div>
+
+                </div>
+                <div class="pt-5">
+                    <h2 class="text-lg text-leopard-200">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="/" class="hover:text-leopard-950">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/wildlife-dept.html">Wildlife Dept</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/leopard.html">Leopard</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-5">
+                    <h2 class="text-lg text-leopard-200">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li>
+                            <a class="hover:text-leopard-950" href="/our-wildlife.html">Our Wildlife</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/yala.html">Yala</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/wilpattu.html">Wilpattu</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-leopard-950" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-leopard-500 text-white">
+                <div class="container mx-auto text-xs">
+                    <div class="flex justify-between">
+                        <p class="text-center py-2">
+                            All Copyrights Reserved © Department of Wildlife Conservation
+                        </p>
+                        <p class="text-center py-2">
+                            Developed by <a href="">Anuda Ranasinghe</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('_home', () => ({
+                init() {
+                    var swiper = new Swiper(".swiper-container", {                    
+                        loop: true,
+                        autoplay: {
+                            delay: 10000,
+                            disableOnInteraction: false,
+                        },
+    
+                    });
+                }
+            }))
+        })
+    </script>
+</body>
+
+</html>
+
